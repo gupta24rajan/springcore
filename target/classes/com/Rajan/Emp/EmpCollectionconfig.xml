@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:context="http://www.springframework.org/schema/context"
+      xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="emp" class="com.Rajan.Emp.Emp">
+      <property name="name" value="Raju"/>
+      
+      <property name="phones">
+         <list>
+             <value>2345538535</value>
+             <value>9145338535</value>
+             <value>8245538535</value>
+             <null/>
+      </list>
+      </property>
+      
+      <property name="address">
+         <set>
+              <value>patna</value>
+             <value>lucknow</value>
+             <value>delhi</value>
+         </set>
+      </property>
+      
+      
+      <property name="courses">
+         <map>
+              <entry key="SpringBoot"  value="1Month" />
+              <entry key="java"  value="2Month" />
+              <entry key="python"  value="1.5Month" />
+         </map>
+      </property>
+      
+      
+      <property name="props">
+         <props>
+           <prop key="name">RajAlgo</prop>
+           <prop key="channelName">MasterWith RajAlgo</prop>
+         </props>
+      </property>
+      
+    </bean>
+    
+</beans>
